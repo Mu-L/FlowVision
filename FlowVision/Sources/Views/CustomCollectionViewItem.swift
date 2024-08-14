@@ -143,7 +143,7 @@ class CustomCollectionViewItem: NSCollectionViewItem {
             imageViewObj.isFolder = false
         }
         
-        imageNameField.stringValue=URL(string:file.path)!.lastPathComponent
+        imageNameField.stringValue=""//URL(string:file.path)!.lastPathComponent
         
         if(playAnimation){
             NSAnimationContext.runAnimationGroup({ context in

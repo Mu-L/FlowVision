@@ -1950,7 +1950,7 @@ class ViewController: NSViewController, NSSplitViewDelegate {
         //let startKey = fileDB.db[targetFolder]!.files.elementSafe(atOffset: layoutCalcPos).0
         if layoutCalcPos>0 {
             if let thumbSize=fileDB.db[SortKeyDir(targetFolder)]!.files.elementSafe(atOffset: layoutCalcPos-1)?.1.thumbSize {
-                lastSingleHeight = thumbSize.height - (12+18)
+                lastSingleHeight = thumbSize.height - (12+0)
             }
         }
         if layoutCalcPos < count {
@@ -1981,7 +1981,7 @@ class ViewController: NSViewController, NSSplitViewDelegate {
                             singleHeight = originalSizeSingle.height/originalSizeSingle.width*singleWidth
                         }
                         
-                        let size=NSSize(width: singleWidth+12, height: singleHeight+12+18)
+                        let size=NSSize(width: singleWidth+12, height: singleHeight+12+0)
                         fileDB.db[SortKeyDir(targetFolder)]!.files[singleId]!.thumbSize=size
                         fileDB.db[SortKeyDir(targetFolder)]!.files[singleId]!.lineNo=lineCount
                     }
@@ -3047,7 +3047,7 @@ class ViewController: NSViewController, NSSplitViewDelegate {
                                 log("第一张图片开始载入耗时: \(timeInterval) seconds")
                             }
                             
-                            var revisedSize = NSSize(width: thumbSize!.width-12, height: thumbSize!.height-12-18)
+                            var revisedSize = NSSize(width: thumbSize!.width-12, height: thumbSize!.height-12-0)
                             if publicVar.layoutType == .grid {
                                 revisedSize = AVMakeRect(aspectRatio: originalSize ?? DEFAULT_SIZE, insideRect: CGRect(origin: CGPoint(x: 0, y: 0), size: revisedSize)).size
                             }
