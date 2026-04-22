@@ -692,7 +692,7 @@ extension ViewController {
             file.imageInfo=getImageInfo(url: url, needMetadata: true)
             file.finderTags = (try? url.resourceValues(forKeys: [.tagNamesKey]))?.tagNames ?? []
             file.originalSize=file.imageInfo?.size
-            if !justChangeLargeImageViewFile {
+            if !justChangeLargeImageViewFile && !publicVar.isLaunchFromFile_changeLargeImage {
                 // 获取缩略图（以加快响应）
                 // Get thumbnail (to speed up response)
                 file.image = getImageThumb(url: url, refSize: file.originalSize)
