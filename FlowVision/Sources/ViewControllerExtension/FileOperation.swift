@@ -1208,6 +1208,15 @@ extension ViewController {
                     allSuccess = false
                 }
             } else if destExists {
+                if itemURL.lastPathComponent == ".DS_Store" {
+                    do {
+                        try fm.removeItem(at: destItemURL)
+                        try fm.copyItem(at: itemURL, to: destItemURL)
+                    } catch {
+                        log("Merge copy failed (.DS_Store): \(error)", level: .error)
+                    }
+                    continue
+                }
                 if state.shouldReplaceAll {
                     do {
                         try fm.removeItem(at: destItemURL)
@@ -1339,6 +1348,15 @@ extension ViewController {
                     allSuccess = false
                 }
             } else if destExists {
+                if itemURL.lastPathComponent == ".DS_Store" {
+                    do {
+                        try fm.removeItem(at: destItemURL)
+                        try fm.moveItem(at: itemURL, to: destItemURL)
+                    } catch {
+                        log("Merge move failed (.DS_Store): \(error)", level: .error)
+                    }
+                    continue
+                }
                 if state.shouldReplaceAll {
                     do {
                         try fm.removeItem(at: destItemURL)
