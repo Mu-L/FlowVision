@@ -47,6 +47,8 @@ class SortKey: Comparable {
     var exifDate: Date = Date(timeIntervalSince1970: 0)
     var exifPixel: Int = 0
     var rating: Int = -1
+    var tag: String = ""
+    var isTagLoaded: Bool = false
     
     static var keyTransformedDict = Dictionary<String,[String]>()
     static let keyTransformedDictLock = NSLock()
@@ -210,6 +212,16 @@ class SortKey: Comparable {
         }
     }
     
+    static func writeTagInfo(_ sortKey: SortKey) {
+        if !sortKey.isTagLoaded {
+            if let url = URL(string: sortKey.path) {
+                let tags = (try? url.resourceValues(forKeys: [.tagNamesKey]))?.tagNames ?? []
+                sortKey.tag = tags.sorted().joined(separator: ",")
+            }
+            sortKey.isTagLoaded = true
+        }
+    }
+    
     static func < (lhs: SortKey, rhs: SortKey) -> Bool {
         // 异常情况，认为相等
         // Abnormal case, consider them equal
@@ -315,6 +327,29 @@ class SortKey: Comparable {
             }else if lhs.sortType == .ratingZ {
                 if lhs.rating == rhs.rating {return isSmallerPath(lhs: lhs, rhs: rhs)}
                 return lhs.rating < rhs.rating
+            }
+        }
+        
+        // 标签排序
+        // Tag sort
+        if lhs.sortType == .tagA || lhs.sortType == .tagZ {
+            writeTagInfo(lhs)
+            writeTagInfo(rhs)
+            let lEmpty = lhs.tag.isEmpty
+            let rEmpty = rhs.tag.isEmpty
+            if lEmpty != rEmpty {
+                if lhs.sortType == .tagA {
+                    return rEmpty
+                }else{
+                    return lEmpty
+                }
+            }
+            if lhs.sortType == .tagA {
+                if lhs.tag == rhs.tag {return isSmallerPath(lhs: lhs, rhs: rhs)}
+                return lhs.tag.localizedStandardCompare(rhs.tag) == .orderedAscending
+            }else if lhs.sortType == .tagZ {
+                if lhs.tag == rhs.tag {return isSmallerPath(lhs: lhs, rhs: rhs)}
+                return lhs.tag.localizedStandardCompare(rhs.tag) == .orderedDescending
             }
         }
         

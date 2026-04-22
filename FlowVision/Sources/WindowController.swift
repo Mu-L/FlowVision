@@ -790,13 +790,15 @@ extension WindowController: NSToolbarDelegate {
                     title = NSLocalizedString("sort-label-exifPixel", comment: "Exif像素")
                 case .ratingA,.ratingZ:
                     title = NSLocalizedString("sort-label-rating", comment: "XMP评级")
+                case .tagA,.tagZ:
+                    title = NSLocalizedString("sort-label-tag", comment: "Finder标签")
                 }
                 switch viewController.publicVar.profile.sortType {
-                case .pathA,.extA,.sizeA,.createDateA,.modDateA,.addDateA,.exifDateA,.exifPixelA,.ratingA:
+                case .pathA,.extA,.sizeA,.createDateA,.modDateA,.addDateA,.exifDateA,.exifPixelA,.ratingA,.tagA:
                     // image = NSImage(systemSymbolName: "arrow.up", accessibilityDescription: "")!
                     // image = NSImage(systemSymbolName: "arrowtriangle.up", accessibilityDescription: "")!
                     image = NSImage(systemSymbolName: "chevron.up.circle", accessibilityDescription: "")!
-                case .pathZ,.extZ,.sizeZ,.createDateZ,.modDateZ,.addDateZ,.exifDateZ,.exifPixelZ,.ratingZ:
+                case .pathZ,.extZ,.sizeZ,.createDateZ,.modDateZ,.addDateZ,.exifDateZ,.exifPixelZ,.ratingZ,.tagZ:
                     image = NSImage(systemSymbolName: "chevron.down.circle", accessibilityDescription: "")!
                 case .random:
                     // image = NSImage(systemSymbolName: "arrow.up.arrow.down.circle", accessibilityDescription: "")!
@@ -1066,7 +1068,9 @@ extension WindowController: NSToolbarDelegate {
             .exifPixelA: NSImage(systemSymbolName: "camera.aperture", accessibilityDescription: ""),
             .exifPixelZ: NSImage(systemSymbolName: "camera.aperture", accessibilityDescription: ""),
             .ratingA: NSImage(systemSymbolName: "star", accessibilityDescription: ""),
-            .ratingZ: NSImage(systemSymbolName: "star", accessibilityDescription: "")
+            .ratingZ: NSImage(systemSymbolName: "star", accessibilityDescription: ""),
+            .tagA: NSImage(systemSymbolName: "tag", accessibilityDescription: ""),
+            .tagZ: NSImage(systemSymbolName: "tag", accessibilityDescription: "")
         ]
         let sortTypes: [(SortType, String)] = [
             (.pathA, NSLocalizedString("sort-pathA", comment: "文件名")),
@@ -1081,6 +1085,8 @@ extension WindowController: NSToolbarDelegate {
             (.modDateZ, NSLocalizedString("sort-modDateZ", comment: "修改日期(倒序)")),
             (.addDateA, NSLocalizedString("sort-addDateA", comment: "添加日期")),
             (.addDateZ, NSLocalizedString("sort-addDateZ", comment: "添加日期(倒序)")),
+            (.tagA, NSLocalizedString("sort-tagA", comment: "Finder标签")),
+            (.tagZ, NSLocalizedString("sort-tagZ", comment: "Finder标签(倒序)")),
             (.random, NSLocalizedString("sort-random", comment: "随机"))
         ]
         

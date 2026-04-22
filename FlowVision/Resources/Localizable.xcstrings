@@ -11229,7 +11229,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "退出全屏"
+            "value" : "Exit Full Screen"
           }
         },
         "es" : {
@@ -29362,79 +29362,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ الإضافة"
+            "value" : "تاريخ الإضافة"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Hinzufügedatum sortieren"
+            "value" : "Hinzugefügt am"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Date Added"
+            "value" : "Date Added"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha de añadido"
+            "value" : "Fecha de adición"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date d'ajout"
+            "value" : "Date ajoutée"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data di aggiunta"
+            "value" : "Data aggiunta"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "追加日で並べ替え"
+            "value" : "追加日"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "추가된 날짜순"
+            "value" : "추가된 날짜"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op datum toegevoegd"
+            "value" : "Datum toegevoegd"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Adição"
+            "value" : "Data de Adição"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Adição"
+            "value" : "Data de Adição"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате добавления"
+            "value" : "Дата добавления"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter tillagd datum"
+            "value" : "Datum tillagt"
           }
         },
         "zh-Hans" : {
@@ -29446,7 +29446,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按添加日期排序"
+            "value" : "添加日期"
           }
         }
       }
@@ -29457,79 +29457,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ الإضافة (تنازلي)"
+            "value" : "تاريخ الإضافة (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Hinzufügedatum sortieren (Absteigend)"
+            "value" : "Hinzugefügt am (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Date Added (Descending)"
+            "value" : "Date Added (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha de añadido (descendente)"
+            "value" : "Fecha de adición (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date d'ajout (décroissant)"
+            "value" : "Date ajoutée (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data di aggiunta (decrescente)"
+            "value" : "Data aggiunta (Discendente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "追加日で並べ替え（降順）"
+            "value" : "追加日（降順）"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "추가된 날짜순 (내림차순)"
+            "value" : "추가된 날짜 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op datum toegevoegd (aflopend)"
+            "value" : "Datum toegevoegd (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Adição (Decrescente)"
+            "value" : "Data de Adição (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Adição (Decrescente)"
+            "value" : "Data de Adição (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате добавления (по убыванию)"
+            "value" : "Дата добавления (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter tillagd datum (fallande)"
+            "value" : "Datum tillagt (fallande)"
           }
         },
         "zh-Hans" : {
@@ -29541,7 +29541,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按添加日期排序（降序）"
+            "value" : "添加日期 (降序)"
           }
         }
       }
@@ -29552,79 +29552,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ الإنشاء"
+            "value" : "تاريخ الإنشاء"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Erstellungsdatum sortieren"
+            "value" : "Erstellungsdatum"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Date Created"
+            "value" : "Date Created"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha de creación"
+            "value" : "Fecha de creación"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date de création"
+            "value" : "Date de création"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data di creazione"
+            "value" : "Data di creazione"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "作成日で並べ替え"
+            "value" : "作成日"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "생성 날짜순 정렬"
+            "value" : "생성 날짜"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op aanmaakdatum"
+            "value" : "Aanmaakdatum"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Criação"
+            "value" : "Data de Criação"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Criação"
+            "value" : "Data de Criação"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате создания"
+            "value" : "Дата создания"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter skapelsedatum"
+            "value" : "Skapelsedatum"
           }
         },
         "zh-Hans" : {
@@ -29636,7 +29636,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按创建日期排序"
+            "value" : "创建日期"
           }
         }
       }
@@ -29647,79 +29647,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ الإنشاء (تنازلي)"
+            "value" : "تاريخ الإنشاء (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Erstellungsdatum sortieren (Absteigend)"
+            "value" : "Erstellungsdatum (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Date Created (Descending)"
+            "value" : "Date Created (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha de creación (descendente)"
+            "value" : "Fecha de creación (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date de création (décroissant)"
+            "value" : "Date de création (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data di creazione (decrescente)"
+            "value" : "Data di creazione (Discendente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "作成日で並べ替え（降順）"
+            "value" : "作成日（降順）"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "생성 날짜별 정렬 (내림차순)"
+            "value" : "생성 날짜 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op aanmaakdatum (aflopend)"
+            "value" : "Aanmaakdatum (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Criação (Decrescente)"
+            "value" : "Data de Criação (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Criação (Decrescente)"
+            "value" : "Data de Criação (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате создания (по убыванию)"
+            "value" : "Дата создания (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter skapelsedatum (fallande)"
+            "value" : "Skapelsedatum (fallande)"
           }
         },
         "zh-Hans" : {
@@ -29731,7 +29731,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按创建日期排序（降序）"
+            "value" : "创建日期 (降序)"
           }
         }
       }
@@ -29932,79 +29932,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ Exif"
+            "value" : "تاريخ Exif"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Exif-Datum sortieren"
+            "value" : "Exif-Datum"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Exif Date"
+            "value" : "Exif Date"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha Exif"
+            "value" : "Fecha Exif"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date Exif"
+            "value" : "Date Exif"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data Exif"
+            "value" : "Data Exif"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exif日付で並べ替え"
+            "value" : "Exif日付"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exif 날짜별 정렬"
+            "value" : "Exif 날짜"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op Exif-datum"
+            "value" : "Exif-datum"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data Exif"
+            "value" : "Data Exif"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data Exif"
+            "value" : "Data Exif"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате Exif"
+            "value" : "Дата Exif"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter Exif-datum"
+            "value" : "Exif-datum"
           }
         },
         "zh-Hans" : {
@@ -30016,7 +30016,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按 Exif 日期排序"
+            "value" : "Exif日期"
           }
         }
       }
@@ -30027,79 +30027,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ Exif (تنازلي)"
+            "value" : "تاريخ Exif (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Exif-Datum sortieren (Absteigend)"
+            "value" : "Exif-Datum (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Exif Date (Descending)"
+            "value" : "Exif Date (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha Exif (descendente)"
+            "value" : "Fecha Exif (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date Exif (décroissant)"
+            "value" : "Date Exif (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data Exif (decrescente)"
+            "value" : "Data Exif (Discendente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exif日付で並べ替え（降順）"
+            "value" : "Exif 日付 (降順)"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exif 날짜로 정렬 (내림차순)"
+            "value" : "Exif 날짜 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op Exif-datum (aflopend)"
+            "value" : "Exif-datum (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data Exif (Decrescente)"
+            "value" : "Data Exif (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data Exif (Decrescente)"
+            "value" : "Data Exif (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате Exif (по убыванию)"
+            "value" : "Дата Exif (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter Exif-datum (fallande)"
+            "value" : "Exif-datum (fallande)"
           }
         },
         "zh-Hans" : {
@@ -30111,7 +30111,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按 Exif 日期排序（降序）"
+            "value" : "Exif日期(降序)"
           }
         }
       }
@@ -30122,79 +30122,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب حجم بكسل Exif"
+            "value" : "حجم بكسل Exif"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Exif-Pixelgröße sortieren"
+            "value" : "Exif-Pixelgröße"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Exif Pixel Size"
+            "value" : "Exif Pixel Size"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por tamaño de píxel Exif"
+            "value" : "Tamaño de píxel Exif"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par taille de pixel Exif"
+            "value" : "Taille des pixels Exif"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per dimensione pixel Exif"
+            "value" : "Dimensione pixel Exif"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exifピクセルサイズで並べ替え"
+            "value" : "Exifピクセルサイズ"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exif 픽셀 크기별 정렬"
+            "value" : "Exif 픽셀 크기"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op Exif-pixelgrootte"
+            "value" : "Exif-pixelgrootte"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho de Pixel Exif"
+            "value" : "Tamanho do Pixel Exif"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho de Pixel Exif"
+            "value" : "Tamanho do Pixel Exif"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по размеру пикселей Exif"
+            "value" : "Размер пикселя Exif"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter Exif-pixelstorlek"
+            "value" : "Exif-pixelstorlek"
           }
         },
         "zh-Hans" : {
@@ -30206,7 +30206,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按 Exif 像素大小排序"
+            "value" : "Exif像素大小"
           }
         }
       }
@@ -30217,79 +30217,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب حجم بكسل Exif (تنازلي)"
+            "value" : "حجم بكسل Exif (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Exif-Pixelgröße sortieren (Absteigend)"
+            "value" : "Exif-Pixelgröße (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Exif Pixel Size (Descending)"
+            "value" : "Exif Pixel Size (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por tamaño de píxel Exif (descendente)"
+            "value" : "Tamaño de píxel Exif (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par taille de pixel Exif (décroissant)"
+            "value" : "Taille des pixels Exif (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per dimensione pixel Exif (decrescente)"
+            "value" : "Dimensione pixel Exif (Discendente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exifピクセルサイズで並べ替え（降順）"
+            "value" : "Exifピクセルサイズ（降順）"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exif 픽셀 크기별 정렬 (내림차순)"
+            "value" : "Exif 픽셀 크기 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op Exif-pixelgrootte (aflopend)"
+            "value" : "Exif-pixelgrootte (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho de Pixel Exif (Decrescente)"
+            "value" : "Tamanho do Pixel Exif (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho de Pixel Exif (Decrescente)"
+            "value" : "Tamanho de Pixel Exif (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по размеру пикселей Exif (по убыванию)"
+            "value" : "Размер пикселя Exif (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter Exif-pixelstorlek (fallande)"
+            "value" : "Exif-pixelstorlek (fallande)"
           }
         },
         "zh-Hans" : {
@@ -30301,7 +30301,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按 Exif 像素大小排序（降序）"
+            "value" : "Exif像素大小(降序)"
           }
         }
       }
@@ -30312,79 +30312,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الفرز حسب نوع الملف"
+            "value" : "نوع الملف"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Dateityp sortieren"
+            "value" : "Dateityp"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by File Type"
+            "value" : "File Type"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por tipo de archivo"
+            "value" : "Tipo de archivo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par type de fichier"
+            "value" : "Type de fichier"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per tipo di file"
+            "value" : "Tipo di file"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ファイルタイプで並べ替え"
+            "value" : "ファイルタイプ"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "파일 유형별 정렬"
+            "value" : "파일 유형"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op bestandstype"
+            "value" : "Bestandstype"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tipo de Arquivo"
+            "value" : "Tipo de Arquivo"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tipo de Ficheiro"
+            "value" : "Tipo de Ficheiro"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по типу файла"
+            "value" : "Тип файла"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter filtyp"
+            "value" : "Filtyp"
           }
         },
         "zh-Hans" : {
@@ -30396,7 +30396,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按文件類型排序"
+            "value" : "文件類型"
           }
         }
       }
@@ -30407,79 +30407,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الفرز حسب نوع الملف (تنازلي)"
+            "value" : "نوع الملف (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Dateityp sortieren (Absteigend)"
+            "value" : "Dateityp (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by File Type (Descending)"
+            "value" : "File Type (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por tipo de archivo (descendente)"
+            "value" : "Tipo de archivo (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par type de fichier (décroissant)"
+            "value" : "Type de fichier (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per tipo di file (decrescente)"
+            "value" : "Tipo di file (Discendente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ファイルタイプで並べ替え（降順）"
+            "value" : "ファイルタイプ（降順）"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "파일 유형별 정렬 (내림차순)"
+            "value" : "파일 유형 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op bestandstype (aflopend)"
+            "value" : "Bestandstype (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tipo de Arquivo (Decrescente)"
+            "value" : "Tipo de Arquivo (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tipo de Ficheiro (Descendente)"
+            "value" : "Tipo de Ficheiro (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по типу файла (по убыванию)"
+            "value" : "Тип файла (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter filtyp (fallande)"
+            "value" : "Filtyp (fallande)"
           }
         },
         "zh-Hans" : {
@@ -30491,7 +30491,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按文件類型排序 (降序)"
+            "value" : "文件類型 (降序)"
           }
         }
       }
@@ -31256,85 +31256,180 @@
         }
       }
     },
+    "sort-label-tag" : {
+      "comment" : "Finder标签",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "علامات الباحث"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-Tags"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder Tags"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas de Finder"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étiquettes Finder"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag del Finder"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finderタグ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder 태그"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-tags"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tags do Finder"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas do Finder"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Теги Finder"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-taggar"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder标签"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder標籤"
+          }
+        }
+      }
+    },
     "sort-modDateA" : {
       "comment" : "修改日期",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ التعديل"
+            "value" : "تاريخ التعديل"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortieren nach Änderungsdatum"
+            "value" : "Änderungsdatum"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Date Modified"
+            "value" : "Date Modified"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha de modificación"
+            "value" : "Fecha de modificación"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date de modification"
+            "value" : "Date de modification"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data di modifica"
+            "value" : "Data di modifica"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "更新日で並べ替え"
+            "value" : "変更日"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "수정 날짜별 정렬"
+            "value" : "수정 날짜"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op datum gewijzigd"
+            "value" : "Datum gewijzigd"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Modificação"
+            "value" : "Data de Modificação"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Modificação"
+            "value" : "Data de Modificação"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате изменения"
+            "value" : "Дата изменения"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter ändringsdatum"
+            "value" : "Ändringsdatum"
           }
         },
         "zh-Hans" : {
@@ -31346,7 +31441,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按修改日期排序"
+            "value" : "修改日期"
           }
         }
       }
@@ -31357,79 +31452,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب تاريخ التعديل (تنازلي)"
+            "value" : "تاريخ التعديل (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortieren nach Änderungsdatum (Absteigend)"
+            "value" : "Änderungsdatum (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Date Modified (Descending)"
+            "value" : "Date Modified (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por fecha de modificación (descendente)"
+            "value" : "Fecha de modificación (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par date de modification (décroissant)"
+            "value" : "Date de modification (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per data di modifica (decrescente)"
+            "value" : "Data di modifica (Discendente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "更新日で並べ替え（降順）"
+            "value" : "変更日（降順）"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "수정 날짜별 정렬 (내림차순)"
+            "value" : "수정 날짜 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op datum gewijzigd (aflopend)"
+            "value" : "Datum gewijzigd (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Modificação (Decrescente)"
+            "value" : "Data de Modificação (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Data de Modificação (Decrescente)"
+            "value" : "Data de Modificação (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по дате изменения (по убыванию)"
+            "value" : "Дата изменения (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter ändringsdatum (fallande)"
+            "value" : "Ändringsdatum (fallande)"
           }
         },
         "zh-Hans" : {
@@ -31441,7 +31536,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按修改日期排序 (降序)"
+            "value" : "修改日期 (降序)"
           }
         }
       }
@@ -31452,79 +31547,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب اسم الملف"
+            "value" : "اسم الملف"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Dateiname sortieren"
+            "value" : "Dateiname"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Filename"
+            "value" : "Filename"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por nombre de archivo"
+            "value" : "Nombre de archivo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par nom de fichier"
+            "value" : "Nom du fichier"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per nome file"
+            "value" : "Nome file"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ファイル名で並べ替え"
+            "value" : "ファイル名"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "파일명으로 정렬"
+            "value" : "파일 이름"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op bestandsnaam"
+            "value" : "Bestandsnaam"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Nome do Arquivo"
+            "value" : "Nome do arquivo"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Nome do Ficheiro"
+            "value" : "Nome do ficheiro"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по имени файла"
+            "value" : "Имя файла"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter filnamn"
+            "value" : "Filnamn"
           }
         },
         "zh-Hans" : {
@@ -31536,7 +31631,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按文件名排序"
+            "value" : "文件名"
           }
         }
       }
@@ -31547,79 +31642,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب اسم الملف (تنازلي)"
+            "value" : "اسم الملف (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Dateiname sortieren (Absteigend)"
+            "value" : "Dateiname (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by Filename (Descending)"
+            "value" : "Filename (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por nombre de archivo (descendente)"
+            "value" : "Nombre de archivo (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par nom de fichier (décroissant)"
+            "value" : "Nom de fichier (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per nome file (decrescente)"
+            "value" : "Nome file (Decrescente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ファイル名で並べ替え (降順)"
+            "value" : "ファイル名（降順）"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "파일명으로 정렬 (내림차순)"
+            "value" : "파일 이름 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op bestandsnaam (aflopend)"
+            "value" : "Bestandsnaam (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Nome do Arquivo (Decrescente)"
+            "value" : "Nome do arquivo (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Nome do Ficheiro (Decrescente)"
+            "value" : "Nome do ficheiro (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по имени файла (по убыванию)"
+            "value" : "Имя файла (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter filnamn (fallande)"
+            "value" : "Filnamn (fallande)"
           }
         },
         "zh-Hans" : {
@@ -31631,7 +31726,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按文件名排序（降序）"
+            "value" : "文件名 (降序)"
           }
         }
       }
@@ -31821,7 +31916,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "XMP 評級"
+            "value" : "XMP評級"
           }
         }
       }
@@ -31850,19 +31945,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clasificación XMP (descendente)"
+            "value" : "Clasificación XMP (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Classement XMP (décroissant)"
+            "value" : "Évaluation XMP (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Valutazione XMP (decrescente)"
+            "value" : "Valutazione XMP (Discendente)"
           }
         },
         "ja" : {
@@ -31880,7 +31975,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "XMP-beoordeling (aflopend)"
+            "value" : "XMP-beoordeling (Aflopend)"
           }
         },
         "pt-BR" : {
@@ -32022,79 +32117,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب حجم الملف"
+            "value" : "حجم الملف"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Dateigröße sortieren"
+            "value" : "Dateigröße"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by File Size"
+            "value" : "File Size"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por tamaño de archivo"
+            "value" : "Tamaño de archivo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par taille de fichier"
+            "value" : "Taille du fichier"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per dimensione file"
+            "value" : "Dimensione file"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ファイルサイズで並べ替え"
+            "value" : "ファイルサイズ"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "파일 크기별 정렬"
+            "value" : "파일 크기"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op bestandsgrootte"
+            "value" : "Bestandsgrootte"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho do Arquivo"
+            "value" : "Tamanho do Arquivo"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho do Ficheiro"
+            "value" : "Tamanho do Ficheiro"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по размеру файла"
+            "value" : "Размер файла"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter filstorlek"
+            "value" : "Filstorlek"
           }
         },
         "zh-Hans" : {
@@ -32106,7 +32201,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按文件大小排序"
+            "value" : "檔案大小"
           }
         }
       }
@@ -32117,79 +32212,79 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الترتيب حسب حجم الملف (تنازلي)"
+            "value" : "حجم الملف (تنازلي)"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nach Dateigröße sortieren (Absteigend)"
+            "value" : "Dateigröße (Absteigend)"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort by File Size (Descending)"
+            "value" : "File Size (Descending)"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por tamaño de archivo (descendente)"
+            "value" : "Tamaño de archivo (Descendente)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trier par taille de fichier (décroissant)"
+            "value" : "Taille du fichier (décroissant)"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordina per dimensione file (decrescente)"
+            "value" : "Dimensione file (Discendente)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ファイルサイズで並べ替え（降順）"
+            "value" : "ファイルサイズ（降順）"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "파일 크기별 정렬 (내림차순)"
+            "value" : "파일 크기 (내림차순)"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorteren op bestandsgrootte (aflopend)"
+            "value" : "Bestandsgrootte (Aflopend)"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho do Arquivo (Decrescente)"
+            "value" : "Tamanho do Arquivo (Decrescente)"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordenar por Tamanho do Ficheiro (Decrescente)"
+            "value" : "Tamanho do Ficheiro (Decrescente)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сортировать по размеру файла (по убыванию)"
+            "value" : "Размер файла (по убыванию)"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sortera efter filstorlek (fallande)"
+            "value" : "Filstorlek (fallande)"
           }
         },
         "zh-Hans" : {
@@ -32201,7 +32296,197 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按文件大小排序（降序）"
+            "value" : "檔案大小 (降序)"
+          }
+        }
+      }
+    },
+    "sort-tagA" : {
+      "comment" : "Finder标签",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "علامات الباحث"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-Tags"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder Tags"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas de Finder"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étiquettes Finder"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag del Finder"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finderタグ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "파인더 태그"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-tags"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tags do Finder"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas do Finder"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Теги Finder"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-taggar"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder标签"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder標籤"
+          }
+        }
+      }
+    },
+    "sort-tagZ" : {
+      "comment" : "Finder标签(倒序)",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "علامات الباحث (تنازلي)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-Tags (Absteigend)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder Tags (Descending)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas del Finder (Descendente)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étiquettes Finder (décroissant)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag del Finder (Discendente)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finderタグ（降順）"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "파인더 태그 (내림차순)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-tags (Aflopend)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tags do Finder (Decrescente)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas do Finder (Descendente)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Теги Finder (по убыванию)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder-taggar (fallande)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder标签(倒序)"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder標籤(降序)"
           }
         }
       }
