@@ -121,7 +121,11 @@ class VideoPlayerControlsView: NSView {
         effectView.blendingMode = .withinWindow
         effectView.state = .active
         effectView.wantsLayer = true
-        effectView.layer?.cornerRadius = 8
+        if #available(macOS 26.0, *) {
+            effectView.layer?.cornerRadius = 16
+        } else {
+            effectView.layer?.cornerRadius = 8
+        }
         effectView.layer?.masksToBounds = true
         effectView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(effectView)

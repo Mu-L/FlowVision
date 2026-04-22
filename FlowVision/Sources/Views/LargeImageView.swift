@@ -71,6 +71,8 @@ class LargeImageView: NSView {
     
     private var lastClickTime: TimeInterval = 0
     private var lastClickLocation: NSPoint = NSPoint.zero
+    private var lastMouseUpTime: TimeInterval = 0
+    private let minDoubleClickInterval: TimeInterval = 0.01
     // 双击位置阈值，可以根据需要调整
     // Double-click position threshold, can be adjusted as needed
     private let positionThreshold: CGFloat = 4.0
@@ -392,9 +394,9 @@ class LargeImageView: NSView {
     private func createEdgeArrowViews() {
         // 定义箭头视图的样式
         // Define arrow view style
-        let arrowBackgroundColor = NSColor.black.withAlphaComponent(0.2)
-        let arrowBorderColor = NSColor.black.withAlphaComponent(0.3)
-        let arrowTintColor = NSColor.black.withAlphaComponent(0.5)
+        let arrowBackgroundColor = hexToNSColor(hex: "#DDDDDD", alpha: 0.3)
+        let arrowBorderColor = hexToNSColor(hex: "#666666", alpha: 0.3)
+        let arrowTintColor = hexToNSColor(hex: "#000000", alpha: 0.6)
         
         // 创建左侧箭头视图（尺寸由 updateArrowViewPositions 动态计算）
         // Create left arrow view (size calculated dynamically by updateArrowViewPositions)
@@ -1535,6 +1537,9 @@ class LargeImageView: NSView {
         if !(getViewController(self)!.publicVar.isRightMouseDown) {
             let currentTime = event.timestamp
             let currentLocation = event.locationInWindow
+            if currentTime - lastClickTime < minDoubleClickInterval {
+                return
+            }
             if currentTime - lastClickTime < NSEvent.doubleClickInterval,
                distanceBetweenPoints(lastClickLocation, currentLocation) < positionThreshold {
                 getViewController(self)?.closeLargeImage(0)
@@ -1592,6 +1597,13 @@ class LargeImageView: NSView {
     
     override func mouseUp(with event: NSEvent) {
         if isEventInVideoControls(event) { return }
+
+        if !(getViewController(self)!.publicVar.isRightMouseDown) {
+            if event.timestamp - lastMouseUpTime < minDoubleClickInterval {
+                return
+            }
+            lastMouseUpTime = event.timestamp
+        }
         
         // 临时按住左键也能缩放
         // Temporarily hold left button to enable zoom
@@ -1601,11 +1613,6 @@ class LargeImageView: NSView {
         longPressZoomTimer = nil
         wheelZoomRegenTimer?.invalidate()
         wheelZoomRegenTimer = nil
-
-        if videoPreventDoubleClickOpenPauseFlag {
-            videoPreventDoubleClickOpenPauseFlag = false
-            return
-        }
         
         if hasZoomedByWheel {
             getViewController(self)?.changeLargeImage(firstShowThumb: false, resetSize: false, triggeredByLongPress: false)
@@ -1615,14 +1622,6 @@ class LargeImageView: NSView {
         if pausedBySeek {
             resumeVideo()
             pausedBySeek = false
-        }
-
-        // 暂停/恢复视频
-        // Pause/resume video
-        if !(getViewController(self)!.publicVar.isRightMouseDown) && isKeyWindowWhenMouseDown {
-            if file.type == .video {
-                pauseOrResumeVideo()
-            }
         }
 
         // 检测点击左侧、右侧区域来切换图像
@@ -1642,6 +1641,7 @@ class LargeImageView: NSView {
                 // 点击左侧，切换到上一张图像
                 // Click left side, switch to previous image
                 if leftArrowImageView?.isHidden == false {
+                    lastClickTime = 0
                     getViewController(self)?.previousLargeImage()
                     return
                 }
@@ -1649,9 +1649,22 @@ class LargeImageView: NSView {
                 // 点击右侧，切换到下一张图像
                 // Click right side, switch to next image
                 if rightArrowImageView?.isHidden == false {
+                    lastClickTime = 0
                     getViewController(self)?.nextLargeImage()
                     return
                 }
+            }
+        }
+
+        // 暂停/恢复视频
+        // Pause/resume video
+        if !(getViewController(self)!.publicVar.isRightMouseDown) && isKeyWindowWhenMouseDown {
+            if file.type == .video {
+                if videoPreventDoubleClickOpenPauseFlag {
+                    videoPreventDoubleClickOpenPauseFlag = false
+                    return
+                }
+                pauseOrResumeVideo()
             }
         }
 
