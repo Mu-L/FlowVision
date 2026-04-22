@@ -38,6 +38,7 @@ class WindowController: NSWindowController, NSWindowDelegate {
             toolbar.displayMode = .iconOnly
             // toolbar.showsBaselineSeparator = true
             window.toolbar = toolbar
+            window.toolbarStyle = .unifiedCompact
 
             window.acceptsMouseMovedEvents = true
             if globalVar.autoHideToolbar {
@@ -413,6 +414,73 @@ extension WindowController: NSToolbarDelegate {
         for (index, identifier) in itemIdentifiers.enumerated() {
             toolbar.insertItem(withItemIdentifier: identifier, at: index)
         }
+        
+        adjustPathControlWidth()
+    }
+    
+    func adjustPathControlWidth() {
+        guard let toolbar = window?.toolbar,
+              let window = window else { return }
+        
+        guard let pathControlItem = toolbar.items.first(where: { $0.itemIdentifier == .pathControl }),
+              let pathControl = pathControlItem.view as? CustomPathControl else { return }
+        
+        let font = NSFont.systemFont(ofSize: 13, weight: .regular)
+        
+        var otherItemsWidth: CGFloat = 0
+        for item in toolbar.items {
+            if item.itemIdentifier == .pathControl || item.itemIdentifier == .flexibleSpace { continue }
+            if let view = item.view {
+                otherItemsWidth += view.fittingSize.width
+            }
+        }
+        
+        let itemCount = toolbar.items.filter { $0.itemIdentifier != .flexibleSpace }.count
+        let spacingValue: CGFloat
+        if #available(macOS 26.0, *) {
+            spacingValue = 12
+        } else {
+            spacingValue = 6
+        }
+        let interItemSpacing = CGFloat(itemCount) * spacingValue
+        let maxWidth = window.frame.width - otherItemsWidth - interItemSpacing - 20
+        
+        var pathItems = pathControl.fullPathItems
+        guard !pathItems.isEmpty else { return }
+        
+        var totalWidth: CGFloat = 0
+        var startIndex = pathItems.count - 1
+        
+        for i in (0..<pathItems.count).reversed() {
+            let itemWidth = pathItems[i].title.size(withAttributes: [.font: font]).width + 15
+            totalWidth += itemWidth
+            if totalWidth > maxWidth {
+                startIndex = i + 1
+                break
+            }
+        }
+        
+        if startIndex == pathItems.count {
+            startIndex = pathItems.count - 1
+        }
+        
+        if totalWidth > maxWidth && startIndex != 0 {
+            let ellipsisItem = CustomPathControlItem()
+            ellipsisItem.title = "..."
+            ellipsisItem.myUrl = pathItems[startIndex].myUrl?.deletingLastPathComponent()
+            pathItems = [ellipsisItem] + pathItems[startIndex...]
+        }
+        
+        pathControl.pathItems = pathItems
+        
+        let titleFontColor = NSColor.labelColor
+        for item in pathControl.pathItems {
+            let range = NSMakeRange(0, item.attributedTitle.length)
+            let attributedTitle = NSMutableAttributedString(attributedString: item.attributedTitle)
+            attributedTitle.addAttribute(.foregroundColor, value: titleFontColor, range: range)
+            attributedTitle.addAttribute(.font, value: font, range: range)
+            item.attributedTitle = attributedTitle
+        }
     }
     
     func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
@@ -521,61 +589,8 @@ extension WindowController: NSToolbarDelegate {
                     pathItems.insert(rootItem, at: 0)
                 }
                 
-                // 指定总宽度
-                // Specify total width
-                var maxWidth = (window?.frame.width ?? 1000) - 590 - 45
-                if viewController.publicVar.autoPlayVisibleVideo {
-                    maxWidth -= 45
-                }
-                if viewController.publicVar.isCurrentFolderFiltered {
-                    maxWidth -= 45
-                }
-                if viewController.publicVar.isRecursiveMode {
-                    maxWidth -= 45
-                }
-                if !viewController.publicVar.finderTagFilters.isEmpty {
-                    maxWidth -= 45
-                }
-                if !viewController.publicVar.ratingFilters.isEmpty {
-                    maxWidth -= 45
-                }
-                if viewController.publicVar.profile.getValue(forKey: "isWindowTitleShowStatistics") == "true" {
-                    maxWidth -= viewController.publicVar.titleStatisticInfo.size(withAttributes: [.font: font]).width + 20
-                }
-                var totalWidth: CGFloat = 0
-                var startIndex = pathItems.count - 1
-                
-                // 从后往前计算每个路径项的实际宽度
-                // Calculate actual width of each path item from back to front
-                for i in (0..<pathItems.count).reversed() {
-                    // 15为分隔符宽度
-                    // 15 is separator width
-                    let itemWidth = pathItems[i].title.size(withAttributes: [.font: font]).width + 15
-                    totalWidth += itemWidth
-                    if totalWidth > maxWidth {
-                        startIndex = i + 1
-                        break
-                    }
-                }
-
-                // 最后一个时已经超过
-                // When the last one already exceeds
-                if startIndex == pathItems.count {
-                    startIndex = pathItems.count - 1
-                }
-                
-                // 如果超过最大字符数,替换前面的为...
-                // If exceeds maximum characters, replace preceding ones with ...
-                if totalWidth > maxWidth && startIndex != 0 {
-                    let item = CustomPathControlItem()
-                    item.title = "..."
-                    item.myUrl = pathItems[startIndex].myUrl?.deletingLastPathComponent()
-                    pathItems = [item] + pathItems[startIndex...]
-                }
-                
                 pathItems.last?.myUrl = nil
-
-                pathControl.pathItems = pathItems
+                pathControl.fullPathItems = pathItems
             }
             
             for item in pathControl.pathItems {
@@ -644,7 +659,9 @@ extension WindowController: NSToolbarDelegate {
             toolbarItem.visibilityPriority = .low
 
         case .tagging:
-            let button = NSButton(title: "", image: NSImage(systemSymbolName: "tag", accessibilityDescription: "")!, target: self, action: #selector(taggingAction(_:)))
+            let hasFilter = !viewController.publicVar.finderTagFilters.isEmpty || !viewController.publicVar.ratingFilters.isEmpty
+            let symbolName = hasFilter ? "tag.fill" : "tag"
+            let button = NSButton(title: "", image: NSImage(systemSymbolName: symbolName, accessibilityDescription: "")!, target: self, action: #selector(taggingAction(_:)))
             setButtonStyle(button)
             button.toolTip = NSLocalizedString("Tagging", comment: "标签")
             toolbarItem.view = button

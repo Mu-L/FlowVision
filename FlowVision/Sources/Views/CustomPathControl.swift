@@ -7,7 +7,7 @@ import Foundation
 import Cocoa
 
 class CustomPathControl: NSPathControl {
-
+    var fullPathItems: [CustomPathControlItem] = []
 }
 
 class CustomPathControlItem: NSPathControlItem {
