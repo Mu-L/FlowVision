@@ -1742,6 +1742,16 @@ func getImageInfo(url: URL, needMetadata: Bool) -> ImageInfo? {
         if let thumb = getImageThumb(url: url) {return ImageInfo(thumb.size)}
         return nil
     }else if globalVar.HandledImageAndRawExtensions.contains(url.pathExtension.lowercased()){
+        // SVG 是矢量格式，ImageIO 在旧系统上可能不支持
+        // SVG is a vector format; ImageIO may not support it on older systems
+        if url.pathExtension.lowercased() == "svg" {
+            if let nsImage = NSImage(contentsOf: url), nsImage.size.width > 0, nsImage.size.height > 0 {
+                let imageInfo = ImageInfo(nsImage.size)
+                imageInfo.ext = "svg"
+                return imageInfo
+            }
+            return nil
+        }
         guard let imageSource = CGImageSourceCreateWithURL(url as CFURL, nil) else { return nil }
         guard let imageProperties = CGImageSourceCopyPropertiesAtIndex(imageSource, 0, nil) as? [String: Any] else { return nil }
         guard let width = imageProperties[kCGImagePropertyPixelWidth as String] as? CGFloat,
