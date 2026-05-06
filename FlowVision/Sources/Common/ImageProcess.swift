@@ -1110,6 +1110,10 @@ func getAnimateImage(url: URL, size: NSSize? = nil, rotate: Int = 0) -> NSImage?
     return nil
 }
 
+func getOriginalImage(url: URL, rotate: Int = 0) -> NSImage? {
+    return NSImage(contentsOf: url)?.rotated(by: CGFloat(-90*rotate))
+}
+
 func getResizedImage(url: URL, size oriSize: NSSize, rotate: Int = 0, isRawUseEmbeddedThumb: Bool) -> NSImage? {
     
     let size: NSSize = NSSize(width: round(oriSize.width), height: round(oriSize.height))
@@ -1289,11 +1293,25 @@ func getResizedImageUsingCI(url: URL, size: NSSize? = nil, rotate: Int = 0, useH
             }
         }
 
+        // 显式选择输出色彩空间，避免直接沿用源色彩空间（如 ProPhoto RGB）
+        // HDR 用 Rec.2100 PQ；SDR 优先 Display P3，回退到 sRGB。
+        // Pick an explicit output color space instead of reusing the source one
+        // HDR: Rec.2100 PQ; SDR: prefer Display P3, fall back to sRGB.
+        let outputColorSpace: CGColorSpace = {
+            if #available(macOS 14.0, *), useHDR {
+                return CGColorSpace(name: CGColorSpace.itur_2100_PQ)
+                    ?? CGColorSpace(name: CGColorSpace.displayP3)
+                    ?? CGColorSpace(name: CGColorSpace.sRGB)!
+            }
+            return CGColorSpace(name: CGColorSpace.displayP3)
+                ?? CGColorSpace(name: CGColorSpace.sRGB)!
+        }()
+
         let context = CIContext(options: [.name: "Renderer"])
         if let cgImage = context.createCGImage(inputImage,
                                                from: inputImage.extent,
                                                format: ciFormat,
-                                               colorSpace: inputImage.colorSpace ?? CGColorSpace(name: CGColorSpace.itur_2100_PQ)!,
+                                               colorSpace: outputColorSpace,
                                                deferred: false) {
             
             return NSImage(cgImage: cgImage, size: NSSize(width: cgImage.width, height: cgImage.height))
@@ -2410,12 +2428,12 @@ class LargeImageProcessor {
                 if let animateImage = getAnimateImage(url: url, rotate: rotate) {
                     image = animateImage
                 } else {
-                    image = NSImage(contentsOf: url)?.rotated(by: CGFloat(-90*rotate))
+                    image = getOriginalImage(url: url, rotate: rotate)
                 }
             }else{
                 image = getResizedImage(url: url, size: size, rotate: rotate, isRawUseEmbeddedThumb: isRawUseEmbeddedThumb)
                 if image == nil {
-                    image = NSImage(contentsOf: url)?.rotated(by: CGFloat(-90*rotate))
+                    image = getOriginalImage(url: url, rotate: rotate)
                 }
             }
             

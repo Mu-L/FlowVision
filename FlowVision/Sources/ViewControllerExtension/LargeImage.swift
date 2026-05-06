@@ -968,13 +968,13 @@ extension ViewController {
                             if let animateImage = getAnimateImage(url: url, rotate: rotate) {
                                 largeImage = animateImage
                             } else {
-                                largeImage = NSImage(contentsOf: url)?.rotated(by: CGFloat(-90*rotate))
+                                largeImage = getOriginalImage(url: url, rotate: rotate)
                             }
                         }else{
                             largeImage = getResizedImage(url: url, size: largeSize, rotate: rotate, isRawUseEmbeddedThumb: publicVar.isRawUseEmbeddedThumb)
                             if largeImage == nil {
                                 lastResizeFailed = true
-                                largeImage = NSImage(contentsOf: url)?.rotated(by: CGFloat(-90*rotate))
+                                largeImage = getOriginalImage(url: url, rotate: rotate)
                             }
                         }
                     }
