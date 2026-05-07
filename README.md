@@ -116,6 +116,8 @@ If you found the project is helpful, feel free to buy me a coffee.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/netdcyn)
 
+<img src="https://flowvision.app/donate.jpg" alt="WeChat Donate" width="350"/>
+
 ## License
 
 This project is licensed under the GPL License. See the [LICENSE](https://github.com/netdcy/FlowVision/blob/main/LICENSE) file for the full license text.
