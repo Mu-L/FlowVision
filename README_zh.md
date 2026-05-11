@@ -118,6 +118,14 @@ Xcode 15.2+
 4. 用Xcode打开 `FlowVision.xcodeproj` ，在菜单栏中点击 'Product' -> 'Build For' -> 'Profiling' 。
 5. 然后 'Product' -> 'Show Build Folder in Finder'，就可以看到构建好的app了 `Products/Release/FlowVision.app` 。
 
+## 支持
+
+如果你感觉这个应用有帮助，欢迎支持开发者！
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/netdcyn)
+
+<img src="https://flowvision.app/donate.jpg" alt="WeChat Donate" width="350"/>
+
 ## 协议
 
 本项目使用GPL许可证。完整的许可证文本请参见 [LICENSE](https://github.com/netdcy/FlowVision/blob/main/LICENSE) 文件。
